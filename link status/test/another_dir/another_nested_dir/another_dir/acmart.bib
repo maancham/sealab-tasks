@@ -1,0 +1,1321 @@
+@book{modern__operating_systems_2007,
+	address = {USA},
+	edition = {3rd},
+	title = {Modern {Operating} {Systems}},
+	isbn = {978-0-13-600663-3},
+	publisher = {Prentice Hall Press},
+	author = {Tanenbaum, Andrew S.},
+	year = {2007}
+}
+
+@INPROCEEDINGS{Wagle03stackguard:simple,
+	author = {Perry Wagle and Crispin Cowan},
+	title = {Stackguard: Simple stack smash protection for GCC},
+	booktitle = {Proc. of the GCC Developers Summit},
+	year = {2003},
+	pages = {243--255}
+}
+
+@ARTICLE{KK_2009,
+	author = {Won Kim and S. Korea},
+	title = {Computing: Today and Tomorrow},
+	journal = {Journal of Object Technology},
+	year = {2009},
+	pages = {65--72}
+}
+
+@inproceedings{KKLL_2009,
+	address = {Kuala Lumpur, Malaysia},
+	series = {{MoMM} '09},
+	title = {Adoption issues for cloud computing},
+	isbn = {978-1-60558-659-5},
+	url = {https://doi.org/10.1145/1821748.1821751},
+	doi = {10.1145/1821748.1821751},
+	abstract = {Cloud computing allows users to use only a Web browser to receive computing services via the Internet. Users only need to pay for the services they actually use. It appears that a wide adoption of cloud computing in the foreseeable future is inevitable, and its adoption will bring about a sea change in the pricing and distribution practices for both software and hardware. There are, however, various issues that will impede adoption of cloud computing. Most of them can be solved. We discuss the status of cloud computing today and various adoption issues. We also provide a market prognosis.},
+	urldate = {2020-07-24},
+	booktitle = {Proceedings of the 7th {International} {Conference} on {Advances} in {Mobile} {Computing} and {Multimedia}},
+	publisher = {Association for Computing Machinery},
+	author = {Kim, Won and Kim, Soo Dong and Lee, Eunseok and Lee, Sungyoung},
+	month = dec,
+	year = {2009},cas-dc subtitle
+	pages = {2--5}
+}
+
+@article{jeong_cfi_2020,
+	title = {A {CFI} {Countermeasure} {Against} {GOT} {Overwrite} {Attacks}},
+	volume = {8},
+	issn = {2169-3536},
+	doi = {10.1109/ACCESS.2020.2975037},
+	abstract = {In the Unix-like system, the Global Offset Table (GOT) overwrite attack is a long-lasting control flow hijacking attack. The attack, by leveraging the dynamic symbol binding mechanism, overwrites any GOT entry into the attacker's target address to take the execution flow on the library function call. Recently, Full Relro (Relocation Read only), which arranges the GOT section as read-only at program startup, is regarded as most useful against the threat. However, it entails nontrivial loading overhead and is not applicable to libraries. Furthermore, many software packages are currently distributed without Full Relro. As a result, programs are still exposed to the risk of GOT attacks. In this paper, we propose a CFI-based protection scheme against the GOT overwrite attack. Using dynamically bound function symbols as branch identifiers, the scheme secures inter-module function calls on PLT (Procedure Linkage Table) effectively with little performance overhead. Our LLVM based implementation and evaluation on binutils-gdb show that the branch protection scheme is difficult to bypass, fast, and compatible with existing library programs.},
+	journal = {IEEE Access},
+	author = {Jeong, Seunghoon and Hwang, Jaejoon and Kwon, Hyukjin and Shin, Dongkyoo},
+	year = {2020},
+	keywords = {Tools, Runtime, Libraries, Unix, security, Security, security of data, software libraries, CFI countermeasure, CFI-based protection scheme, control flow hijacking attack, Control flow integrity, data protection, Geophysical measurement techniques, Global Offset Table overwrite attack, GOT overwrite attacks, GOT/ PLT, Ground penetrating radar, library function call, library programs, linker and loader, LLVM, Loading, PLT, Procedure Linkage Table, program startup, Relocation Read only, Unix-like system},
+	pages = {36267--36280},
+	file = {IEEE Xplore Full Text PDF:/home/sgeorgiou/Zotero/storage/GKJP9JB5/Jeong et al. - 2020 - A CFI Countermeasure Against GOT Overwrite Attacks.pdf:application/pdf}
+}
+
+@inproceedings{cowan_stackguard_1998,
+	address = {San Antonio, Texas},
+	series = {{SSYM}'98},
+	title = {{StackGuard}: automatic adaptive detection and prevention of buffer-overflow attacks},
+	shorttitle = {{StackGuard}},
+	abstract = {This paper presents a systematic solution to the persistent problem of buffer overflow attacks. Buffer overflow attacks gained notoriety in 1988 as part of the Morris Worm incident on the Internet. While it is fairly simple to fix individual buffer overflow vulnerabilities, buffer overflow attacks continue to this day. Hundreds of attacks have been discovered, and while most of the obvious vulnerabilities have now been patched, more sophisticated buffer overflow attacks continue to emerge. We describe StackGuard: a simple compiler technique that virtually eliminates buffer overflow vulnerabilities with only modest performance penalties. Privileged programs that are recompiled with the StackGuard compiler extension no longer yield control to the attacker, but rather enter a fail-safe state. These programs require no source code changes at all, and are binary-compatible with existing operating systems and libraries. We describe the compiler technique (a simple patch to gcc), as well as a set of variations on the technique that trade-off between penetration resistance and performance. We present experimental results of both the penetration resistance and the performance impact of this technique.},
+	urldate = {2020-06-25},
+	booktitle = {Proceedings of the 7th conference on {USENIX} {Security} {Symposium} - {Volume} 7},
+	publisher = {USENIX Association},
+	author = {Cowan, Crispin and Pu, Calton and Maier, Dave and Hintony, Heather and Walpole, Jonathan and Bakke, Peat and Beattie, Steve and Grier, Aaron and Wagle, Perry and Zhang, Qian},
+	month = jan,
+	year = {1998},
+	pages = {5}
+}
+
+@article{lin_executable_2015,
+	title = {Executable {Program} {Code} {Segment} {Address} {Randomization}},
+	doi = {10.1109/CSA.2015.69},
+	abstract = {In Linux Address Space layout Randomization, not all memory addresses are random. Executable Program is still loaded to a static address, so an attacker can do code reuse attack by using gadgets in executable program code segment. To improve the weaken ASLR, this paper proposes and implements a new protection method named EPCSAR (Executable Program Code Segment Address Randomization). Taking advantage of static analysis results of IDA, EPCSAR used an IDA plugin to identify the instructions needing relocation in the ELF executable program. By modifying the ELF loader, EPCSAR mapped the executable program code segment into a random address. Evaluation shows the EPCSAR can defense the code reuse attack using gadgets in static region, and only has low runtime overhead of 1.31\%.},
+	journal = {2015 International Conference on Computer Science and Applications (CSA)},
+	author = {Lin, Jian and Guo, Yu-dong and Man, Y. and Zhou, Shao-Huang},
+	year = {2015}
+}
+
+@inproceedings {facebook_memcached,
+	author = {Rajesh Nishtala and Hans Fugal and Steven Grimm and Marc Kwiatkowski and Herman Lee and Harry C. Li and Ryan McElroy and Mike Paleczny and Daniel Peek and Paul Saab and David Stafford and Tony Tung and Venkateshwaran Venkataramani},
+	title = {Scaling Memcache at Facebook},
+	booktitle = {Presented as part of the 10th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 13)},
+	year = {2013},
+	isbn = {978-1-931971-00-3},
+	address = {Lombard, IL},
+	pages = {385--398},
+	url = {https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/nishtala},
+	publisher = {{USENIX}},
+}
+
+@inproceedings{twitter_technology_stack,
+	title = {Twitter {Heron}: {Towards} {Extensible} {Streaming} {Engines}},
+	shorttitle = {Twitter {Heron}},
+	doi = {10.1109/ICDE.2017.161},
+	abstract = {Twitter's data centers process billions of events per day the instant the data is generated. To achieve real-time performance, Twitter has developed Heron, a streaming engine that provides unparalleled performance at large scale. Heron has been recently open-sourced and thus is now accessible to various other organizations. In this paper, we discuss the challenges we faced when transforming Heron from a system tailored for Twitter's applications and software stack to a system that efficiently handles applications with diverse characteristics on top of various Big Data platforms. Overcoming these challenges required a careful design of the system using an extensible, modular architecture which provides flexibility to adapt to various environments and applications. Further, we describe the various optimizations that allow us to gain this flexibility without sacrificing performance. Finally, we experimentally show the benefits of Heron's modular architecture.},
+	booktitle = {2017 {IEEE} 33rd {International} {Conference} on {Data} {Engineering} ({ICDE})},
+	author = {Fu, Maosong and Agrawal, Ashvin and Floratou, Avrilia and Graham, Bill and Jorgensen, Andrew and Li, Mark and Lu, Neng and Ramasamy, Karthik and Rao, Sriram and Wang, Cong},
+	month = apr,
+	year = {2017},
+	note = {ISSN: 2375-026X},
+	keywords = {Topology, Computer architecture, Engines, data centers, Yarn, Big Data, Big Data platforms, extensible streaming engines, Heron modular architecture, social networking (online), Sparks, Storms, Twitter, Twitter Heron},
+	pages = {1165--1172}
+}
+
+@inproceedings{spectre_2019,
+	title = {Spectre {Attacks}: {Exploiting} {Speculative} {Execution}},
+	booktitle = {40th {IEEE} {Symposium} on {Security} and {Privacy} ({S}\&{P}'19)},
+	author = {Kocher, Paul and Horn, Jann and Fogh, Anders and Genkin, {and} Daniel and Gruss, Daniel and Haas, Werner and Hamburg, Mike and Lipp, Moritz and Mangard, Stefan and Prescher, Thomas and Schwarz, Michael and Yarom, Yuval},
+	year = {2019}
+}
+
+@inproceedings{meltdown_2018,
+	title = {Meltdown: {Reading} {Kernel} {Memory} from {User} {Space}},
+	booktitle = {27th {USENIX} {Security} {Symposium} ({USENIX} {Security} 18)},
+	author = {Lipp, Moritz and Schwarz, Michael and Gruss, Daniel and Prescher, Thomas and Haas, Werner and Fogh, Anders and Horn, Jann and Mangard, Stefan and Kocher, Paul and Genkin, Daniel and Yarom, Yuval and Hamburg, Mike},
+	year = {2018}
+}
+
+@misc{lenovo_thinkcentre,
+	author = {lenovo thinkcentre},
+	year = {2018},
+	month = {May},
+	title = {{ThinkCentre} {M}910 {Tower} {\textbar} {Power} {Your} {Business} {\textbar} {Lenovo} {Australia}},
+	lastaccessed = {2018-05-22},
+	url = {https://www3.lenovo.com/au/en/desktops-and-all-in-ones/thinkcentre/},
+}
+
+@misc{linux_memset3,
+	author = {Linux die.net},
+	title = {memset(3): fill memory with constant byte - {Linux} man page},
+	url = {https://linux.die.net/man/3/memset},
+	year = {2019},
+	month = {July},
+	urldate = {2019-07-26},
+	file = {memset(3)\: fill memory with constant byte - Linux man page:/home/sgeorgiou/Zotero/storage/TW26QSPS/memset.html:text/html}
+}
+
+@misc{watts_up_pro,
+	author = {WattsUpMeter},
+	year = {2017}, 
+	month = {Oct},
+	title = {Watts up? {Products}: {Meters}},
+	lastaccessed = {2018-01-15},
+	url = {https://www.wattsupmeters.com/secure/products.php?pn=0}, 
+}
+
+@misc{phoronix_test_suite,
+	author = {Michael, Larabel},
+	year = {2019}, 
+	month = {June},
+	title = {Test Profile},
+	lastaccessed = {2019-06-17},
+	url = {https://github.com/phoronix-test-suite/test-profiles}, 
+}
+
+@misc{bailey_watts-up:_2017,
+	author = {Bailey, Peter},
+	year = {2017},
+	month = {September},
+	title = {{Watts} {Up} {Pro} power meter interface utility for {Linux}},
+	lastaccessed = {2018-10-23},
+	url = {https://github.com/pyrovski/watts-up},
+}
+
+@misc{phoronix_suite,
+	author = {Phoronix Test Suite},
+	year = {2019},
+	month = {may},
+	title = {Phoronix Open-Source, Automated Benchmarking},
+	lastaccessed = {2019-05-05},
+	url = {https://www.phoronix-test-suite.com/},
+}
+
+@article{PRRJ_2006,
+	title = {A study of the energy consumption characteristics of cryptographic algorithms and security protocols},
+	volume = {5},@inproceedings{van_schaik_cacheout_2021,
+	title = {{CacheOut}: {Leaking} {Data} on {Intel} {CPUs} via {Cache} {Evictions}},
+	shorttitle = {{CacheOut}},
+	doi = {10.1109/SP40001.2021.00064},
+	abstract = {Recent transient-execution attacks, such as RIDL, Fallout, and ZombieLoad, demonstrated that attackers can leak information while it transits through microarchitectural buffers. Named Microarchitectural Data Sampling (MDS) by Intel, these attacks are likened to "drinking from the firehose", as the attacker has little control over what data is observed and from what origin. Unable to prevent the buffers from leaking, Intel issued countermeasures via microcode updates that overwrite the buffers when the CPU changes security domains.In this work we present CacheOut, a new microarchitectural attack that is capable of bypassing Intel’s buffer overwrite countermeasures. We observe that as data is being evicted from the CPU’s L1 cache, it is often transferred back to the leaky CPU buffers where it can be recovered by the attacker. CacheOut improves over previous MDS attacks by allowing the attacker to choose which data to leak from the CPU’s L1 cache, as well as which part of a cache line to leak. We demonstrate that CacheOut can leak information across multiple security boundaries, including those between processes, virtual machines, user and kernel space, and from SGX enclaves.},
+	booktitle = {2021 {IEEE} {Symposium} on {Security} and {Privacy} ({SP})},
+	author = {van Schaik, Stephan and Minkin, Marina and Kwong, Andrew and Genkin, Daniel and Yarom, Yuval},
+	month = may,
+	year = {2021},
+	note = {ISSN: 2375-1207},
+	keywords = {Data privacy, Kernel, Microarchitecture, Security, Virtual machining},
+	pages = {339--354},
+	file = {Submitted Version:/home/sgeorgiou/Zotero/storage/RSUPA538/van Schaik et al. - 2021 - CacheOut Leaking Data on Intel CPUs via Cache Evi.pdf:application/pdf;IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/BE675GVU/9519461.html:text/html},
+	}
+	issn = {1536-1233},
+	doi = {10.1109/TMC.2006.16},
+	number = {2},
+	journal = {IEEE Transactions on Mobile Computing},
+	author = {Potlapally, N. R. and Ravi, S. and Raghunathan, A. and Jha, N. K.},
+	month = feb,
+	year = {2006}
+}
+
+@inproceedings{PB_2012,
+	title = {Towards energy consumption evaluation of the {SSL} handshake protocol in mobile communications},
+	doi = {10.1109/WONS.2012.6152219},
+	booktitle = {2012 9th {Annual} {Conference} on {Wireless} {On}-{Demand} {Network} {Systems} and {Services} ({WONS})},
+	author = {Petridou, S. and Basagiannis, S.},
+	month = jan,
+	year = {2012}
+}
+
+
+@inproceedings{GKNLD_2018,
+	title = {Energy and {Processing} {Demand} {Analysis} of {TLS} {Protocol} in {Internet} of {Things} {Applications}},
+	doi = {10.1109/SiPS.2018.8598334},
+	booktitle = {2018 {IEEE} {International} {Workshop} on {Signal} {Processing} {Systems} ({SiPS})},
+	author = {Gerez, A. H. and Kamaraj, K. and Nofal, R. and Liu, Y. and Dezfouli, B.},
+	month = oct,
+	year = {2018}
+}
+
+@inproceedings{MSW_2011,
+	title = {{TLS} and energy consumption on a mobile device: {A} measurement study},
+	shorttitle = {{TLS} and energy consumption on a mobile device},
+	doi = {10.1109/ISCC.2011.5983970},
+	booktitle = {2011 {IEEE} {Symposium} on {Computers} and {Communications} ({ISCC})},
+	author = {Miranda, P. and Siekkinen, M. and Waris, H.},
+	month = jun,
+	year = {2011}
+}
+
+@techreport{GW_2008,
+	address = {Mountain View, CA, USA},
+	title = {The {Energy} {Cost} of {SSL} in {Deeply} {Embedded} {Systems}},
+	institution = {Sun Microsystems, Inc.},
+	author = {Gupta, Vipul and Wurm, Michael},
+	year = {2008}
+}
+
+@inproceedings{khan_increasing_2011,
+	title = {Increasing the energy efficiency of {TLS} systems using intermediate checkpointing},
+	doi = {10.1109/HiPC.2011.6152735},
+	booktitle = {2011 18th {International} {Conference} on {High} {Performance} {Computing}},
+	author = {Khan, S. and Ioannou, N. and Xekalakis, P. and Cintra, M.},
+	month = dec,
+	year = {2011},
+	pages = {1--10},
+}
+
+@inproceedings{spectre_performance_2018,
+	title = {Measuring the {Impact} of {Spectre} and {Meltdown}},
+	doi = {10.1109/HPEC.2018.8547554},
+	booktitle = {2018 {IEEE} {High} {Performance} extreme {Computing} {Conference} ({HPEC})},
+	author = {Prout, A. and Arcand, W. and Bestor, D. and Bergeron, B. and Byun, C. and Gadepally, V. and Houle, M. and Hubbell, M. and Jones, M. and Klein, A. and Michaleas, P. and Milechin, L. and Mullen, J. and Rosa, A. and Samsi, S. and Yee, C. and Reuther, A. and Kepner, J.},
+	month = sep,
+	year = {2018}
+}
+
+@article{SIJMWGDFT_2018,
+	title = {Effect of {Meltdown} and {Spectre} {Patches} on the {Performance} of {HPC} {Applications}},
+	url = {http://arxiv.org/abs/1801.04329},
+	urldate = {2019-05-07},
+	journal = {arXiv:1801.04329 [cs]},
+	author = {Simakov, Nikolay A. and Innus, Martins D. and Jones, Matthew D. and White, Joseph P. and Gallo, Steven M. and DeLeon, Robert L. and Furlani, Thomas R.},
+	month = jan,
+	year = {2018},
+	note = {arXiv: 1801.04329},
+	keywords = {Computer Science - Performance},
+}
+
+@inproceedings{hindle_greenminer:_2014,
+	address = {New York, NY, USA},
+	series = {{MSR} 2014},
+	title = {{GreenMiner}: {A} {Hardware} {Based} {Mining} {Software} {Repositories} {Software} {Energy} {Consumption} {Framework}},
+	isbn = {978-1-4503-2863-0},
+	shorttitle = {{GreenMiner}},
+	urldate = {2017-02-07},
+	booktitle = {Proceedings of the 11th {Working} {Conference} on {Mining} {Software} {Repositories}},
+	publisher = {ACM},
+	author = {Hindle, Abram and Wilson, Alex and Rasmussen, Kent and Barlow, E. Jed and Campbell, Joshua Charles and Romansky, Stephen},
+	year = {2014},
+	keywords = {android, software change, software energy consumption},
+	pages = {12--21},
+	file = {ACM Full Text PDF:D\:\\Users\\SGI\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\8cih0sf8.default\\zotero\\storage\\FUF6PRS7\\Hindle et al. - 2014 - GreenMiner A Hardware Based Mining Software Repos.pdf:application/pdf;Hindle et al. - 2014 - GreenMiner A Hardware Based Mining Software Repos.pdf:D\:\\Users\\SGI\\Dropbox\\PhD - Energy Efficiecny in Cloud Computing Systems\\Zotero Bib\\Software Engineering\\Hindle et al. - 2014 - GreenMiner A Hardware Based Mining Software Repos.pdf:application/pdf}
+}
+
+@inproceedings{bornholt_model_2012,
+	title = {The model is not enough: {Understanding} energy consumption in mobile devices},
+	shorttitle = {The model is not enough},
+	abstract = {Mobile devices are placing energy efficiency in the hands of software developers. Unfortunately, power modelling alone cannot identify significant power variations, nor is it practical in deployment. We show that on-board fine-grained power measurements of the fuel gauge are now both accurate and low overhead.},
+	booktitle = {2012 {IEEE} {Hot} {Chips} 24 {Symposium} ({HCS})},
+	author = {Bornholt, J. and Mytkowicz, T. and McKinley, K. S.},
+	month = aug,
+	year = {2012},
+	keywords = {automotive components, Batteries, Battery charge measurement, energy consumption, Energy consumption, energy efficiency, fuel gauge, gauges, mechanical engineering computing, Mobile communication, mobile computing, Mobile Devices, Mobile handsets, on-board fine-grained power measurements, power aware computing, Power measurement, power modelling, Sensors},
+	pages = {1--3},
+	file = {Bornholt et al. - 2012 - The model is not enough Understanding energy cons.pdf:/home/sgeorgiou/Dropbox/PhD - Energy Efficiecny in Cloud Computing Systems/Zotero Bib/Software Engineering/Bornholt et al. - 2012 - The model is not enough Understanding energy cons.pdf:application/pdf;IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/VFGNTYQJ/7476509.html:text/html}
+}
+
+@inproceedings {ACCH_2009,
+	title = {Baggy Bounds Checking: An Efficient and Backwards-Compatible Defense against Out-of-Bounds Errors},
+	booktitle = {18th {USENIX} Security Symposium ({USENIX} Security 09)},
+	year = {2009},
+	address = {Montreal, Quebec},
+	url = {https://www.usenix.org/conference/usenixsecurity09/technical-sessions/presentation/baggy-bounds-checking-efficient-and},
+	publisher = {{USENIX} Association},
+	month = aug,
+}
+
+@inproceedings{PFH_2003,
+	address = {Berkeley, CA, USA},
+	series = {{SSYM}'03},
+	title = {Preventing {Privilege} {Escalation}},
+	urldate = {2019-05-05},
+	booktitle = {Proceedings of the 12th {Conference} on {USENIX} {Security} {Symposium} - {Volume} 12},
+	publisher = {USENIX Association},
+	author = {Provos, Niels and Friedl, Markus and Honeyman, Peter},
+	year = {2003}
+}
+
+@article{SPC_16,
+	author = {Sahin, Cagri and Pollock, Lori and Clause, James},
+	title = {From Benchmarks to Real Apps},
+	journal = {Journal of Systems and Software},
+	issue_date = {July 2016},
+	volume = {117},
+	number = {C},
+	month = jul,
+	year = {2016},
+	issn = {0164-1212},
+	pages = {307--316},
+	numpages = {10},
+	acmid = {2949260},
+	publisher = {Elsevier Science Inc.},
+	address = {New York, NY, USA},
+	keywords = {Android applications, Energy efficiency, Performance tips},
+}
+
+@misc{brendan_gregg_kpti,
+	title = {{KPTI}/{KAISER} {Meltdown} {Initial} {Performance} {Regressions}},
+	url = {http://www.brendangregg.com/blog/2018-02-09/kpti-kaiser-meltdown-performance.html},
+	urldate = {2019-06-20},
+	month = feb,
+	year = {2018},
+	author = {Brendan, Gregg},
+	file = {KPTI/KAISER Meltdown Initial Performance Regressions:/home/stefanos/Zotero/storage/IK2ETMR7/kpti-kaiser-meltdown-performance.html:text/html}
+}
+
+@article{barber_isolating_2019,
+	title = {Isolating {Speculative} {Data} to {Prevent} {Transient} {Execution} {Attacks}},
+	issn = {1556-6056},
+	doi = {10.1109/LCA.2019.2916328},
+	abstract = {Hardware security has recently re-surfaced as a first-order concern to the confidentiality protections of computing systems. Meltdown and Spectre introduced a new class of exploits which leverage transient state as an attack surface and have revealed fundamental security vulnerabilities of speculative execution in high-performance processors. These attacks derive benefit from the fact that, during speculative execution, programs may execute instructions outside their legal control flows. This insight is then utilized for gaining access to restricted data and exfiltrating it by means of a covert channel. This study presents a microarchitectural mitigation technique for shielding transient state from covert channels during speculative execution. Unlike prior work that has focused on closing individual covert channels used to leak sensitive information, this approach prevents the use of speculative data by downstream instructions until doing so is determined to be safe. This eliminates transient execution attacks at a cost of 18\% average performance degradation.},
+	journal = {IEEE Computer Architecture Letters},
+	author = {Barber, K. and Zhou, L. and Bacha, A. and Zhang, Y. and Teodorescu, R.},
+	year = {2019},
+	keywords = {covert timing channels, Delays, hardware security, Law, Pipelines, Registers, Security, Transient analysis, transient execution attacks},
+	pages = {1--1},
+	file = {IEEE Xplore Abstract Record:/home/stefanos/Zotero/storage/BEFBMBDY/8714070.html:text/html;IEEE Xplore Full Text PDF:/home/stefanos/Zotero/storage/62RY9LV4/Barber et al. - 2019 - Isolating Speculative Data to Prevent Transient Ex.pdf:application/pdf}
+}
+
+@misc{maximov_sergey_performance_2018,
+	title = {Performance {Implications} of the {Meltdown} and {Spectre} {Fixes}},
+	url = {https://www.virtuozzo.com/connect/details/blog/view/performance-implications-of-the-meltdown-and-spectre-fixes.html},
+	abstract = {Virtuozzo has been releasing fixes for the Meltdown and Spectre vulnerabilities as they become available. An updated summary of our fixes is included below and will be proactively updated here on our blog. There are concerns about potential performance degradation associated with installing these fixes.},
+	month = sep,
+	year = 2018,
+	language = {en},
+	urldate = {2019-06-20},
+	author = {Maximov, Sergey},
+	file = {Snapshot:/home/stefanos/Zotero/storage/F7FPT6Q4/performance-implications-of-the-meltdown-and-spectre-fixes.html:text/html}
+}
+
+@misc{michael_larabel_phoronix_2019,
+	title = {The {Current} {Spectre} / {Meltdown} {Mitigation} {Overhead} {Benchmarks} {On} {Linux} 5.0 - {Phoronix}},
+	url = {https://www.phoronix.com/scan.php?page=article&item=linux50-spectre-meltdown&num=6},
+	urldate = {2019-06-20},
+	author = {Larabel, Michael},
+	month = mar,
+	year = {2019},
+	file = {The Current Spectre / Meltdown Mitigation Overhead Benchmarks On Linux 5.0 - Phoronix:/home/stefanos/Zotero/storage/XZUFFGUJ/scan.html:text/html}
+}
+
+@misc{stress_ng,
+	author = {King, Colin Ian},
+	title = {Kernel/{Reference}/stress-ng - {Ubuntu} {Wiki}},
+	url = {https://wiki.ubuntu.com/Kernel/Reference/stress-ng},
+	month = jul,
+	year = {2019},
+	urldate = {2019-07-11}
+}
+
+@misc{aslr,
+	author = {P, Team},
+	title = {PaX Address Space Layout Randomization (ASLR),”
+	Documentation for the PaX Project},
+	url = {https://pax.grsecurity.net/docs/aslr.txt},
+	month = sep,
+	year = {2021},
+	urldate = {2021-09-13}
+}
+
+@article{zombieload,
+	title = {{ZombieLoad}: Cross-Privilege-Boundary Data Sampling},
+	author = {Schwarz, Michael and Lipp, Moritz and Moghimi, Daniel and Van Bulck, Jo and Stecklina, Julian and Prescher, Thomas and Gruss, Daniel},
+	journal = {arXiv:1905.05726},
+	year = {2019},
+}
+
+@inproceedings{ridl,
+	title = {{RIDL}: Rogue In-flight Data Load},
+	booktitle = {S\&{P}},
+	author = {van Schaik, Stephan and Milburn, Alyssa and Osterlund, Sebastian and Frigo, Pietro and Maisuradze, Giorgi and Razavi, Kaveh and Bos, Herbert and Giuffrida, Cristiano},
+	month = may,
+	year = {2019},
+}
+
+@article{fallout,
+	title={{Fallout}: Reading Kernel Writes From User Space},
+	author={Minkin, Marina and Moghimi, Daniel and Lipp, Moritz and Schwarz, Michael and Van Bulck, Jo and Genkin, Daniel and Gruss, Daniel and Sunar, Berk and Piessens, Frank and Yarom, Yuval},
+	year={2019}
+}
+
+@article{security_performance_2019,
+	title = {The {Performance} {Cost} of {Security}},
+	url = {https://digitalcommons.calpoly.edu/theses/2002},
+	journal = {Master's Theses and Project Reports},
+	author = {Bowen, Lucy},
+	month = jun,
+	year = {2019},
+	file = {"The Performance Cost of Security" by Lucy R. Bowen:/home/sgeorgiou/Zotero/storage/F924KK9X/2002.html:text/html}
+}
+
+@article{CPGMRR_2017,
+	title = {Dynamic {Voltage} {Frequency} {Scaling} {Simulator} for {Real} {Workflows} {Energy}-{Aware} {Management} in {Green} {Cloud} {Computing}},
+	volume = {12},
+	issn = {1932-6203},
+	url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169803},
+	doi = {10.1371/journal.pone.0169803},
+	abstract = {Nowadays, the growing computational capabilities of Cloud systems rely on the reduction of the consumed power of their data centers to make them sustainable and economically profitable. The efficient management of computing resources is at the heart of any energy-aware data center and of special relevance is the adaptation of its performance to workload. Intensive computing applications in diverse areas of science generate complex workload called workflows, whose successful management in terms of energy saving is still at its beginning. WorkflowSim is currently one of the most advanced simulators for research on workflows processing, offering advanced features such as task clustering and failure policies. In this work, an expected power-aware extension of WorkflowSim is presented. This new tool integrates a power model based on a computing-plus-communication design to allow the optimization of new management strategies in energy saving considering computing, reconfiguration and networks costs as well as quality of service, and it incorporates the preeminent strategy for on host energy saving: Dynamic Voltage Frequency Scaling (DVFS). The simulator is designed to be consistent in different real scenarios and to include a wide repertory of DVFS governors. Results showing the validity of the simulator in terms of resources utilization, frequency and voltage scaling, power, energy and time saving are presented. Also, results achieved by the intra-host DVFS strategy with different governors are compared to those of the data center using a recent and successful DVFS-based inter-host scheduling strategy as overlapped mechanism to the DVFS intra-host technique.},
+	language = {en},
+	number = {1},
+	urldate = {2019-07-26},
+	journal = {PLOS ONE},
+	author = {Cotes-Ruiz, Ivan Tomas and Prado, Rocio P. and Garcia-Galan, Sebastian and Munoz-Exposito, Jose Enrique and Ruiz-Reyes, Nicolas},
+	month = jan,
+	year = {2017},
+	keywords = {Algorithms, Cloud computing, Computer networks, Data management, Engines, Environmental impacts, Jobs, Simulation and modeling},
+	pages = {e0169803},
+	file = {Full Text PDF:/home/sgeorgiou/Zotero/storage/2VHL3UC2/Cotes-Ruiz et al. - 2017 - Dynamic Voltage Frequency Scaling Simulator for Re.pdf:application/pdf;Snapshot:/home/sgeorgiou/Zotero/storage/JNMFC2WK/article.html:text/html}
+}
+
+@misc{redhat_governor,
+	title = {4.4. {CPU} {Frequency} {Governors}},
+	author = {Suchanek, Marek and Navratil, Milan and Domingo, Don and Bailey, Laura},
+	url = {https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/performance_tuning_guide/s-cpu-cpufreq},
+	abstract = {The Red Hat Customer Portal delivers the knowledge, expertise, and guidance available through your Red Hat subscription.},
+	language = {en},
+	urldate = {2019-07-26},
+	month = jul,
+	year = {2018},
+	journal = {Red Hat Customer Portal},
+	file = {Snapshot:/home/sgeorgiou/Zotero/storage/YL9MQGGY/s-cpu-cpufreq.html:text/html}
+}
+
+@misc{linux_cpufreq_2017,
+	title = {CPU frequency and voltage scaling code in the Linux(TM) kernel},
+	author = {Dominik, Brodowski and Nico, Golde and Rafael J., Wysocki and Viresh, Kumar},
+	url = {https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt},
+	language= {en},
+	urldate = {2019-08-05},
+	month = apr,
+	yer = {2017},
+	journal = {Kernel Documentation},
+	file = {:/home/stefanos/Zotero/storage/MK4PQQV3/governors.html:text/html}
+}
+
+@inproceedings{RRCVSY_2019,
+	address = {New York, NY, USA},
+	series = {{SOSP} '19},
+	title = {An {Analysis} of {Performance} {Evolution} of {Linux}'s {Core} {Operations}},
+	isbn = {978-1-4503-6873-5},
+	url = {http://doi.acm.org/10.1145/3341301.3359640},
+	doi = {10.1145/3341301.3359640},
+	urldate = {2019-11-25},
+	booktitle = {Proceedings of the 27th {ACM} {Symposium} on {Operating} {Systems} {Principles}},
+	publisher = {ACM},
+	author = {Ren, Xiang (Jenny) and Rodrigues, Kirk and Chen, Luyuan and Vega, Camilo and Stumm, Michael and Yuan, Ding},
+	year = {2019},
+	note = {event-place: Huntsville, Ontario, Canada},
+	keywords = {Linux, operating systems, performance evolution},
+	pages = {554--569}
+}
+
+@article{ritchie_bell_1979,
+	title = {Bell {Laboratories}, {Murray} {Hill}, {N}. {J}.},
+	language = {en},
+	journal = {Unix Supplementary Documents. AT \& T},
+	author = {Ritchie, Dennis M},
+	pages = {3},
+	year = {1979},
+	file = {Ritchie - Bell Laboratories, Murray Hill, N. J..pdf:/home/sgeorgiou/Zotero/storage/WDVD9UZB/Ritchie - Bell Laboratories, Murray Hill, N. J..pdf:application/pdf}
+}
+
+@misc{redis_2018,
+	title = {How fast is {Redis}? -- {Redis}},
+	url = {https://redis.io/topics/benchmarks},
+	urldate = {2019-12-16},
+	year = {2018},
+	file = {How fast is Redis? – Redis:/home/sgeorgiou/Zotero/storage/UIYRDXVC/benchmarks.html:text/html}
+}
+
+@misc{w3tech_2019,
+	title = {Usage {Statistics} and {Market} {Share} of {Linux} for {Websites}, {December} 2019},
+	url = {https://w3techs.com/technologies/details/os-linux},
+	urldate = {2019-12-19},
+	year = {2019},
+	file = {Usage Statistics and Market Share of Linux for Websites, December 2019:/home/sgeorgiou/Zotero/storage/4TMCGJ4U/os-linux.html:text/html}
+}
+
+@misc{gcc_2019,
+	title = {{GCC}, the {GNU} {Compiler} {Collection} - {GNU} {Project} - {Free} {Software} {Foundation} ({FSF})},
+	url = {https://gcc.gnu.org/},
+	urldate = {2019-12-23},
+	year = {2019},
+	file = {GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF):/home/sgeorgiou/Zotero/storage/9LS83TKC/gcc.gnu.org.html:text/html}
+}
+
+@article{PHB_2015,
+	title = {Identifying {Compiler} {Options} to {Minimize} {Energy} {Consumption} for {Embedded} {Platforms}},
+	volume = {58},
+	issn = {1460-2067},
+	doi = {10.1093/comjnl/bxt129},
+	number = {1},
+	journal = {The Computer Journal},
+	author = {Pallister, James and Hollis, Simon J. and Bennett, Jeremy},
+	month = jan,
+	year = {2015},
+	note = {Conference Name: The Computer Journal},
+	keywords = {benchmarks, compilation, embedded systems, energy efficiency, energy optimization, fractional factorial design, optimization selection, power measurement},
+	pages = {95--109},
+}
+
+
+@inproceedings{PHKT_2009,
+	title = {Energy consumption reduction by automatic selection of compiler options},
+	doi = {10.1109/ISSCS.2009.5206106},
+	booktitle = {2009 {International} {Symposium} on {Signals}, {Circuits} and {Systems}},
+	author = {Patyk, Tomasz and Hannula, Harri and Kellomaki, Pertti and Takala, Jarmo},
+	month = jul,
+	year = {2009},
+	doi= {10.1109/ISSCS.2009.5206106},
+	pages = {1--4}
+}
+
+@article{HMF_2017,
+	title = {Performance vs. {Power} and {Energy} {Consumption}: {Impact} of {Coding} {Style} and {Compiler}},
+	volume = {8},
+	shorttitle = {Performance vs. {Power} and {Energy} {Consumption}},
+	url = {https://thesai.org/Publications/ViewPaper?Volume=8&Issue=12&Code=IJACSA&SerialNo=17},
+	doi = {10.14569/IJACSA.2017.081217},
+	language = {en},
+	number = {12},
+	urldate = {2019-12-23},
+	journal = {International Journal of Advanced Computer Science and Applications (IJACSA)},
+	author = {Hassan, Hesham H. M. and Moussa, Ahmed Shawky and Farag, Ibrahim},
+	year = {2017},
+	file = {Full Text PDF:/home/sgeorgiou/Zotero/storage/EYI97BY7/Hassan et al. - 2017 - Performance vs. Power and Energy Consumption Impa.pdf:application/pdf;Snapshot:/home/sgeorgiou/Zotero/storage/E78NC6A4/ViewPaper.html:text/html}
+}
+
+@incollection{VJ_01,
+	address = {Boston, MA},
+	series = {The {Springer} {International} {Series} in {Engineering} and {Computer} {Science}},
+	title = {Is {Compiling} for {Performance} = {Compiling} for {Power}?},
+	isbn = {978-1-4757-3337-2},
+	url = {https://doi.org/10.1007/978-1-4757-3337-2_6},
+	language = {en},
+	urldate = {2019-12-23},
+	booktitle = {Interaction between {Compilers} and {Computer} {Architectures}},
+	publisher = {Springer US},
+	author = {Valluri, Madhavi and John, Lizy K.},
+	editor = {Lee, Gyungho and Yew, Pen-Chung},
+	year = {2001},
+	doi = {10.1007/978-1-4757-3337-2_6},
+	pages = {101--115}
+}
+
+@inproceedings{TMW_2015,
+	title = {The {Performance} {Cost} of {Shadow} {Stacks} and {Stack} {Canaries}},
+	doi = {10.1145/2714576.2714635},
+	abstract = {Control flow defenses against ROP either use strict, expensive, but strong protection against redirected RET instructions with shadow stacks, or much faster but weaker protections without. In this work we study the inherent overheads of shadow stack schemes. We find that the overhead is roughly 10\% for a traditional shadow stack. We then design a new scheme, the parallel shadow stack, and show that its performance cost is significantly less: 3.5\%. Our measurements suggest it will not be easy to improve performance on current x86 processors further, due to inherent costs associated with RET and memory load/store instructions. We conclude with a discussion of the design decisions in our shadow stack instrumentation, and possible lighter-weight alternatives.},
+	booktitle = {{ASIA} {CCS} '15},
+	author = {Dang, Thurston H. Y. and Maniatis, Petros and Wagner, David A.},
+	year = {2015},
+	keywords = {Central processing unit, Control flow, Overhead (computing), Resolution enhancement technology, Shadow stack, Stack buffer overflow, X86},
+	file = {Submitted Version:/home/sgeorgiou/Zotero/storage/BASCGK9P/Dang et al. - 2015 - The Performance Cost of Shadow Stacks and Stack Ca.pdf:application/pdf}
+}
+
+@article{ZQHS_2014,
+	title = {A platform for secure static binary instrumentation},
+	volume = {49},
+	issn = {0362-1340},
+	url = {http://dl.acm.org/citation.cfm?id=2576195.2576208},
+	doi = {10.1145/2576195.2576208},
+	number = {7},
+	urldate = {2019-12-26},
+	journal = {ACM SIGPLAN Notices},
+	author = {Zhang, Mingwei and Qiao, Rui and Hasabnis, Niranjan and Sekar, R.},
+	month = mar,
+	year = {2014},
+	pages = {129--140}
+}
+
+@inproceedings{SPWS_2013,
+	title = {{SoK}: {Eternal} {War} in {Memory}},
+	shorttitle = {{SoK}},
+	doi = {10.1109/SP.2013.13},
+	booktitle = {2013 {IEEE} {Symposium} on {Security} and {Privacy}},
+	author = {Szekeres, Laszlo and Payer, Mathias and Wei, Tao and Song, Dawn},
+	month = may,
+	year = {2013},
+	note = {ISSN: 1081-6011},
+	keywords = {Aerospace electronics, Arrays, Computer bugs, computer security, memory corruption attacks, memory corruption bugs, Memory management, program debugging, Programming, protection mechanisms, protection techniques, Safety, Security, security of data, software reliability, SoK, storage management},
+	pages = {48--62},
+	file = {IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/YPEF2MFX/authors.html:text/html;IEEE Xplore Full Text PDF:/home/sgeorgiou/Zotero/storage/AS4FCGIP/Szekeres et al. - 2013 - SoK Eternal War in Memory.pdf:application/pdf}
+}
+
+@inproceedings{szekeres_sok:_2013,
+	title = {{SoK}: {Eternal} {War} in {Memory}},
+	shorttitle = {{SoK}},
+	doi = {10.1109/SP.2013.13},
+	booktitle = {2013 {IEEE} {Symposium} on {Security} and {Privacy}},
+	author = {Szekeres, László and Payer, Mathias and Wei, Tao and Song, Dawn},
+	month = may,
+	year = {2013},
+	note = {ISSN: 1081-6011},
+	keywords = {Aerospace electronics, Arrays, Computer bugs, computer security, memory corruption attacks, memory corruption bugs, Memory management, program debugging, Programming, protection mechanisms, protection techniques, Safety, Security, security of data, software reliability, SoK, storage management},
+	pages = {48--62},
+	file = {IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/YPEF2MFX/authors.html:text/html;IEEE Xplore Full Text PDF:/home/sgeorgiou/Zotero/storage/AS4FCGIP/Szekeres et al. - 2013 - SoK Eternal War in Memory.pdf:application/pdf}
+}
+
+@inproceedings{PG_2011,
+	address = {New York, NY, USA},
+	series = {{VEE} '11},
+	title = {Fine-grained {User}-space {Security} {Through} {Virtualization}},
+	isbn = {978-1-4503-0687-4},
+	url = {http://doi.acm.org/10.1145/1952682.1952703},
+	doi = {10.1145/1952682.1952703},
+	urldate = {2019-12-26},
+	booktitle = {Proceedings of the 7th {ACM} {SIGPLAN}/{SIGOPS} {International} {Conference} on {Virtual} {Execution} {Environments}},
+	publisher = {ACM},
+	author = {Payer, Mathias and Gross, Thomas R.},
+	year = {2011},
+	note = {event-place: Newport Beach, California, USA},
+	keywords = {virtualization, security, dynamic binary translation, dynamic instrumentation, optimization, policy-based system call authorization, process sandboxing, user-space software virtualization},
+	pages = {157--168}
+}
+
+@inproceedings{BH_2015,
+	title = {Impact of {GCC} optimization levels in energy consumption during {C}/{C}++ program execution},
+	doi = {10.1109/Informatics.2015.7377807},
+	booktitle = {2015 {IEEE} 13th {International} {Scientific} {Conference} on {Informatics}},
+	author = {Branco, David and Henriques, Pedro Rangel},
+	month = nov,
+	year = {2015},
+	note = {ISSN: null},
+	keywords = {-O3 options, -Ofast options, C-C++ program execution, C++ language, code generation phase, Context, electric energy, energy consumption, Energy consumption, executable programs, GCC optimization levels, green computing, green issues, Hardware, hardware manufacturers, instruction sets, optimisation, Optimization, power aware computing, program compilers, Program processors, research project, Software measurement},
+	pages = {52--56},
+	file = {IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/SWF2KKFV/authors.html:text/html}
+}
+
+@inproceedings{ALGJZ_2014,
+	title = {Program energy efficiency: {The} impact of language, compiler and implementation choices},
+	shorttitle = {Program energy efficiency},
+	doi = {10.1109/IGCC.2014.7039169},
+	booktitle = {Green {Computing} {Conference} ({IGCC}), 2014 {International}},
+	author = {Abdulsalam, S. and Lakomski, D. and Gu, Q. and Jin, T. and Zong, Z.},
+	month = nov,
+	year = {2014},
+	pages = {1--6}
+}
+
+@inproceedings{TS_2013,
+	series = {Lecture {Notes} in {Computer} {Science}},
+	title = {Folklore {Confirmed}: {Compiling} for {Speed} = {Compiling} for {Energy}},
+	isbn = {978-3-319-09966-8 978-3-319-09967-5},
+	shorttitle = {Folklore {Confirmed}},
+	url = {https://link.springer.com/chapter/10.1007/978-3-319-09967-5_10},
+	doi = {10.1007/978-3-319-09967-5_10},
+	language = {en},
+	urldate = {2018-01-06},
+	booktitle = {Languages and {Compilers} for {Parallel} {Computing}},
+	publisher = {Springer, Cham},
+	author = {Yuki, Tomofumi and Rajopadhye, Sanjay},
+	month = sep,
+	year = {2013},
+	pages = {169--184}
+}
+
+@inproceedings{PCRRCFS_2017,
+	address = {New York, NY, USA},
+	series = {{SLE} 2017},
+	title = {Energy {Efficiency} {Across} {Programming} {Languages}: {How} {Do} {Energy}, {Time}, and {Memory} {Relate}?},
+	isbn = {978-1-4503-5525-4},
+	shorttitle = {Energy {Efficiency} {Across} {Programming} {Languages}},
+	url = {http://doi.acm.org/10.1145/3136014.3136031},
+	doi = {10.1145/3136014.3136031},
+	urldate = {2019-11-25},
+	booktitle = {Proceedings of the 10th {ACM} {SIGPLAN} {International} {Conference} on {Software} {Language} {Engineering}},
+	publisher = {ACM},
+	author = {Pereira, Rui and Couto, Marco and Ribeiro, Francisco and Rua, Rui and Cunha, Jacome and Fernandes, Joao Paulo and Saraiva, Joao},
+	year = {2017},
+	note = {event-place: Vancouver, BC, Canada},
+	keywords = {Programming Languages, Green Software, Energy Efficiency, Language Benchmarking},
+	pages = {256--267}
+}
+
+@article{GS_2019,
+	title = {Energy-{Delay} {Investigation} of {Remote} {Inter}-{Process} {Communication} {Technologies}},
+	issn = {0164-1212},
+	url = {http://www.sciencedirect.com/science/article/pii/S0164121219302808},
+	doi = {10.1016/j.jss.2019.110506},
+	language = {en},
+	urldate = {2019-12-23},
+	journal = {Journal of Systems and Software},
+	author = {Georgiou, Stefanos and Spinellis, Diomidis},
+	month = dec,
+	year = {2019},
+	keywords = {Energy Efficiency, Programming Languages, Remote Inter-Process Communication, System Calls},
+	pages = {110506}
+}
+
+@inproceedings{LSLCMF_2016,
+	title = {Haskell in {Green} {Land}: {Analyzing} the {Energy} {Behavior} of a {Purely} {Functional} {Language}},
+	volume = {1},
+	shorttitle = {Haskell in {Green} {Land}},
+	doi = {10.1109/SANER.2016.85},
+	booktitle = {2016 {IEEE} 23rd {International} {Conference} on {Software} {Analysis}, {Evolution}, and {Reengineering} ({SANER})},
+	author = {Lima, L. G. and Soares-Neto, F. and Lieuthier, P. and Castor, F. and Melfe, G. and Fernandes, J. P.},
+	month = mar,
+	year = {2016},
+	keywords = {Energy consumption, Energy measurement, green computing, Software, Benchmark testing, Concurrent computing, Empirical study, energy savings, refactoring, concurrency control, Energy Efficiency, Current measurement, functional languages, concurrency property, concurrent benchmark, data sharing primitive, energy efficiency analysis, functional programming, Haskell programs, lazy-purely functional language, program energy behavior analysis, program refactoring, strictness property, Time measurement, TMVar},
+	pages = {517--528}
+}
+
+@inproceedings{PCL_2014,
+	address = {New York, NY, USA},
+	series = {{OOPSLA} '14},
+	title = {Understanding {Energy} {Behaviors} of {Thread} {Management} {Constructs}},
+	isbn = {978-1-4503-2585-1},
+	url = {http://doi.acm.org/10.1145/2660193.2660235},
+	doi = {10.1145/2660193.2660235},
+	urldate = {2016-02-22},
+	booktitle = {Proceedings of the 2014 {ACM} {International} {Conference} on {Object} {Oriented} {Programming} {Systems} {Languages} \& {Applications}},
+	publisher = {ACM},
+	author = {Pinto, Gustavo and Castor, Fernando and Liu, Yu David},
+	year = {2014},
+	keywords = {Energy consumption, Java, performance, multi-threaded programming, thread management},
+	pages = {345--360}
+}
+
+@article{TT_2013,
+	series = {Scalable {Algorithms} for {Large}-{Scale} {Systems} {Workshop} ({ScalA}2011), {Supercomputing} 2011},
+	title = {Energy-aware software: {Challenges}, opportunities and strategies},
+	volume = {4},
+	issn = {1877-7503},
+	shorttitle = {Energy-aware software},
+	url = {http://www.sciencedirect.com/science/article/pii/S1877750313000173},
+	doi = {10.1016/j.jocs.2013.01.005},
+	language = {en},
+	number = {6},
+	urldate = {2019-12-27},
+	journal = {Journal of Computational Science},
+	author = {Trefethen, Anne E. and Thiyagalingam, Jeyarajan},
+	month = nov,
+	year = {2013},
+	pages = {444--449}
+}
+
+@article{CA_2019,
+	title = {Catalog of energy patterns for mobile applications},
+	volume = {24},
+	issn = {1573-7616},
+	url = {https://doi.org/10.1007/s10664-019-09682-0},
+	doi = {10.1007/s10664-019-09682-0},
+	language = {en},
+	number = {4},
+	urldate = {2019-12-27},
+	journal = {Empirical Software Engineering},
+	author = {Cruz, Luis and Abreu, Rui},
+	month = aug,
+	year = {2019},
+	pages = {2209--2235}
+}
+
+@article{HMKR_2013,
+	title = {Watts {Up}? {Pro} {AC} {Power} {Meter} for {Automated} {Energy} {Recording}},
+	volume = {6},
+	issn = {2196-8934},
+	shorttitle = {Watts {Up}?},
+	url = {https://doi.org/10.1007/BF03391795},
+	doi = {10.1007/BF03391795},
+	abstract = {The purpose of the present paper is to review the Watts up? Pro AC power meter. Evaluations of the meter’s reliability for measuring energy consumption by consumer electronics yielded acceptable levels of reliability. Implications and limitations for the use of this product in behavior analytic research and practice are discussed.},
+	language = {en},
+	number = {1},
+	urldate = {2019-12-31},
+	journal = {Behavior Analysis in Practice},
+	author = {Hirst, Jason M. and Miller, Jonathan R. and Kaplan, Brent A. and Reed, Derek D.},
+	month = jun,
+	year = {2013},
+	keywords = {automated measurement, data recording, energy conservation, product review, sustainability},
+	pages = {82--95}
+}
+
+@inproceedings{CGSS_2014,
+	address = {New York, NY, USA},
+	series = {{GREENS} 2014},
+	title = {Can {Execution} {Time} {Describe} {Accurately} the {Energy} {Consumption} of {Mobile} {Apps}? {An} {Experiment} in {Android}},
+	isbn = {978-1-4503-2844-9},
+	shorttitle = {Can {Execution} {Time} {Describe} {Accurately} the {Energy} {Consumption} of {Mobile} {Apps}?},
+	url = {http://doi.acm.org/10.1145/2593743.2593748},
+	doi = {10.1145/2593743.2593748},
+	urldate = {2019-12-27},
+	booktitle = {Proceedings of the 3rd {International} {Workshop} on {Green} and {Sustainable} {Software}},
+	publisher = {ACM},
+	author = {Corral, Luis and Georgiev, Anton B. and Sillitti, Alberto and Succi, Giancarlo},
+	year = {2014},
+	note = {event-place: Hyderabad, India},
+	keywords = {Android, Energy Consumption, Execution Time, Mobile},
+	pages = {31--37}
+}
+
+@inproceedings{JWJFV_2015,
+	address = {New York, NY, USA},
+	series = {{SAC} '15},
+	title = {Profiling {Energy} {Profilers}},
+	isbn = {978-1-4503-3196-8},
+	url = {http://doi.acm.org/10.1145/2695664.2695825},
+	doi = {10.1145/2695664.2695825},
+	urldate = {2016-11-22},
+	booktitle = {Proceedings of the 30th {Annual} {ACM} {Symposium} on {Applied} {Computing}},
+	publisher = {ACM},
+	author = {Jagroep, Erik and van der Werf, Jan Martijn E. M. and Jansen, Slinger and Ferreira, Miguel and Visser, Joost},
+	year = {2015},
+	keywords = {Accuracy, energy profilers, Sustainable Software},
+	pages = {2198--2203}
+}
+
+
+@article{MSML_2019,
+	title = {A {Comparative} {Study} of {Methods} for {Measurement} of {Energy} of {Computing}},
+	volume = {12},
+	copyright = {http://creativecommons.org/licenses/by/3.0/},
+	url = {https://www.mdpi.com/1996-1073/12/11/2204},
+	doi = {10.3390/en12112204},
+	language = {en},
+	number = {11},
+	urldate = {2019-12-31},
+	journal = {Energies},
+	author = {Fahad, Muhammad and Shahid, Arsalan and Manumachu, Ravi Reddy and Lastovetsky, Alexey},
+	month = jan,
+	year = {2019},
+	keywords = {energy efficiency, GPU, RAPL, energy predictive models, multicore CPU, NVML, performance monitoring counters, power aensors, power meters, Xeon Phi},
+	pages = {2204}
+}
+
+@article{JN_2018,
+	title = {How to stop data centres from gobbling up the world's electricity},
+	volume = {561},
+	copyright = {2019 Nature},
+	url = {https://www.nature.com/articles/d41586-018-06610-y},
+	doi = {10.1038/d41586-018-06610-y},
+	abstract = {The energy-efficiency drive at the information factories that serve us Facebook, Google and Bitcoin.},
+	language = {en},
+	number = {7722},
+	urldate = {2020-01-01},
+	journal = {Nature},
+	author = {Jones, Nicola},
+	month = sep,
+	year = {2018},
+	pages = {163--166}
+}
+
+@article{VHLLCPD_2014,
+	series = {Green {Networking}},
+	title = {Trends in worldwide {ICT} electricity consumption from 2007 to 2012},
+	volume = {50},
+	issn = {0140-3664},
+	url = {http://www.sciencedirect.com/science/article/pii/S0140366414000619},
+	doi = {10.1016/j.comcom.2014.02.008},
+	urldate = {2016-05-26},
+	journal = {Computer Communications},
+	author = {Van Heddeghem, Ward and Lambert, Sofie and Lannoo, Bart and Colle, Didier and Pickavet, Mario and Demeester, Piet},
+	month = sep,
+	year = {2014},
+	keywords = {power consumption, Energy-efficiency, electricity consumption, Footprint, Green ICT},
+	pages = {64--76}
+}
+
+@article{GC_2015,
+	title = {The {Impact} of {Information} {Technology} on {Energy} {Consumption} and {Carbon} {Emissions}},
+	volume = {2015},
+	issn = {1530-2180},
+	url = {http://doi.acm.org/10.1145/2755977},
+	doi = {10.1145/2755977},
+	abstract = {In this article the authors evaluate the impact of different sectors of information and communication technologies (ICT) on energy consumption and CO2 emissions. ICT is understood to cover computer and peripheral equipment including local area networks, telecommunication equipment and networks, and data centers.},
+	number = {June},
+	urldate = {2019-08-20},
+	journal = {Ubiquity},
+	author = {Gelenbe, Erol and Caseau, Yves},
+	month = jun,
+	year = {2015},
+	pages = {1:1--1:15}
+}
+
+@inproceedings{BAFPSZ_2003,
+	author = {Barrantes, Elena Gabriela and Ackley, David H. and Forrest, Stephanie and Palmer, Trek S. and Stefanovic, Darko and Zovi, Dino Dai},
+	title = {Randomized Instruction Set Emulation to Disrupt Binary Code Injection Attacks},
+	year = {2003},
+	isbn = {1581137389},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/948109.948147},
+	doi = {10.1145/948109.948147},
+	booktitle = {Proceedings of the 10th ACM Conference on Computer and Communications Security},
+	pages = {281--289},
+	numpages = {9},
+	keywords = {language randomization, security, emulation, information hiding, obfuscation, automated diversity},
+	location = {Washington D.C., USA},
+	series = {CCS '03}
+}
+
+@article{rapl_accuracy_2018,
+	author = {Khan, Kashif Nizam and Hirki, Mikael and Niemi, Tapio and Nurminen, Jukka K. and Ou, Zhonghong},
+	title = {RAPL in Action: Experiences in Using RAPL for Power Measurements},
+	year = {2018},
+	issue_date = {April 2018},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	volume = {3},
+	number = {2},
+	issn = {2376-3639},
+	url = {https://doi.org/10.1145/3177754},
+	doi = {10.1145/3177754},
+	journal = {ACM Trans. Model. Perform. Eval. Comput. Syst.},
+	month = mar,
+	articleno = {Article 9},
+	numpages = {26},
+	keywords = {DRAM power, RAPL validation, power modeling, RAPL accuracy, RAPL}
+}
+
+@inproceedings{rapl_accuracy_2016,
+	author = {Desrochers, Spencer and Paradis, Chad and Weaver, Vincent M.},
+	title = {A Validation of DRAM RAPL Power Measurements},
+	year = {2016},
+	isbn = {9781450343053},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/2989081.2989088},
+	doi = {10.1145/2989081.2989088},
+	booktitle = {Proceedings of the Second International Symposium on Memory Systems},
+	pages = {455--470},
+	numpages = {16},
+	keywords = {DRAM Energy, RAPL, DRAM Power},
+	location = {Alexandria, VA, USA},
+	series = {MEMSYS '16}
+}
+
+@inproceedings{paniego_analysis_2018,
+	address = {Cham},
+	title = {Analysis of {RAPL} {Energy} {Prediction} {Accuracy} in a {Matrix} {Multiplication} {Application} on {Shared} {Memory}},
+	isbn = {978-3-319-75214-3},
+	booktitle = {Computer {Science} -- {CACIC} 2017},
+	publisher = {Springer International Publishing},
+	author = {Paniego, Juan Manuel and Gallo, Silvana and Pi Puig, Martin and Chichizola, Franco and De Giusti, Laura and Balladini, Javier},
+	editor = {De Giusti, Armando Eduardo},
+	year = {2018},
+	pages = {37--46}
+}
+
+@article{KD_2019,
+	author = {Kavanagh, Richard and Djemame, Karim},
+	title = {Rapid and accurate energy models through calibration with IPMI and RAPL},
+	journal = {Concurrency and Computation: Practice and Experience},
+	volume = {31},
+	number = {13},
+	pages = {e5124},
+	keywords = {calibration, energy, energy model, IPMI, power, RAPL},
+	doi = {10.1002/cpe.5124},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.5124},
+	eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.5124},
+	note = {e5124 cpe.5124},
+	abstract = {Summary Energy consumption in Cloud and High Performance Computing platforms is a significant issue and affects aspects such as the cost of energy and the cooling of the data center. Host level monitoring and prediction provides the groundwork for improving energy efficiency through the placement of workloads. Monitoring must be fast and efficient without unnecessary overhead, to enable scalability. This precludes the use of Watt meters attached per host, requiring alternative approaches such as integrated measurements and models. IPMI and RAPL are subject to error and partial measurement, which may be mitigated. Models allow for prediction and more responsive measures of power consumption, but require calibrating. The causes of calibration error are discussed, along with mitigation strategies, without overly complicating the underlying model. An outcome is a Watt meter emulator that provides hosts level power measurement along with estimated power consumption for a given workload, with an average error of 0.20W.},
+	year = {2019}
+}
+
+
+@INPROCEEDINGS{DGHHL_2010,
+	author={H. {David} and E. {Gorbatov} and U. R. {Hanebutte} and R. {Khanna} and C. {Le}},
+	booktitle={2010 ACM/IEEE International Symposium on Low-Power Electronics and Design (ISLPED)},
+	title={RAPL: Memory power estimation and capping},
+	year={2010},
+	volume={},
+	number={},
+	pages={189-194},
+	keywords={Limiting;Bandwidth;Power measurement;Servers;Memory management;Power demand;Heuristic algorithms},
+	doi={10.1145/1840845.1840883},
+	ISSN={null},
+	month={Aug}
+}
+
+@inproceedings{pereira_influence_2016,
+	address = {New York, NY, USA},
+	series = {{GREENS} '16},
+	title = {The {Influence} of the {Java} {Collection} {Framework} on {Overall} {Energy} {Consumption}},
+	isbn = {978-1-4503-4161-5},
+	url = {http://doi.acm.org/10.1145/2896967.2896968},
+	doi = {10.1145/2896967.2896968},
+	abstract = {This paper presents a detailed study of the energy consumption of the different Java Collection Framework (JFC) implementations. For each method of an implementation in this framework, we present its energy consumption when handling different amounts of data. Knowing the greenest methods for each implementation, we present an energy optimization approach for Java programs: based on calls to JFC methods in the source code of a program, we select the greenest implementation. Finally, we present preliminary results of optimizing a set of Java programs where we obtained 6.2\% energy savings.},
+	urldate = {2016-09-30},
+	booktitle = {Proceedings of the 5th {International} {Workshop} on {Green} and {Sustainable} {Software}},
+	publisher = {ACM},
+	author = {Pereira, Rui and Couto, Marco and Saraiva, Joao and Cunha, Jacome and Fernandes, Joao Paulo},
+	year = {2016},
+	keywords = {green computing, energy-aware software},
+	pages = {15--21},
+	file = {2016-10-03.txt:/home/sgeorgiou/Zotero/storage/32SQVQE2/2016-10-03.txt:text/plain;ACM Full Text PDF:/home/sgeorgiou/Zotero/storage/BCJF9WPZ/Pereira et al. - 2016 - The Influence of the Java Collection Framework on .pdf:application/pdf;Pereira et al. - 2016 - The Influence of the Java Collection Framework on .pdf:C\:\\Users\\sgeorgiou\\Dropbox\\PhD - Energy Efficiecny in Cloud Computing Systems\\Zotero Bib\\Software Engineering\\Pereira et al. - 2016 - The Influence of the Java Collection Framework on .pdf:application/pdf
+	}
+}
+
+@INPROCEEDINGS{MPEC_2015,
+	author={I. {Moura} and G. {Pinto} and F. {Ebert} and F. {Castor}},
+	booktitle={2015 IEEE/ACM 12th Working Conference on Mining Software Repositories},
+	title={Mining Energy-Aware Commits},
+	year={2015},
+	volume={},
+	number={},
+	pages={56-67},
+	keywords={power aware computing;software engineering;Github;energy-aware commits;energy management;energy saving techniques;energy-aware interfaces;software development;Energy consumption;Libraries;Computer bugs;Manuals;Kernel;Data mining},
+	doi={10.1109/MSR.2015.13},
+	ISSN={2160-1860},
+	month={May},}
+
+@inproceedings{renaissance_2019,
+	address = {Phoenix, AZ, USA},
+	series = {{PLDI} 2019},
+	title = {Renaissance: benchmarking suite for parallel applications on the {JVM}},
+	isbn = {978-1-4503-6712-7},
+	shorttitle = {Renaissance},
+	url = {https://doi.org/10.1145/3314221.3314637},
+	doi = {10.1145/3314221.3314637},
+	abstract = {Established benchmark suites for the Java Virtual Machine (JVM), such as DaCapo, ScalaBench, and SPECjvm2008, lack workloads that take advantage of the parallel programming abstractions and concurrency primitives offered by the JVM and the Java Class Library. However, such workloads are fundamental for understanding the way in which modern applications and data-processing frameworks use the JVM's concurrency features, and for validating new just-in-time (JIT) compiler optimizations that enable more efficient execution of such workloads. We present Renaissance, a new benchmark suite composed of modern, real-world, concurrent, and object-oriented workloads that exercise various concurrency primitives of the JVM. We show that the use of concurrency primitives in these workloads reveals optimization opportunities that were not visible with the existing workloads. We use Renaissance to compare performance of two state-of-the-art, production-quality JIT compilers (HotSpot C2 and Graal), and show that the performance differences are more significant than on existing suites such as DaCapo and SPECjvm2008. We also use Renaissance to expose four new compiler optimizations, and we analyze the behavior of several existing ones. We use Renaissance to compare performance of two state-of-the-art, production-quality JIT compilers (HotSpot C2 and Graal), and show that the performance differences are more significant than on existing suites such as DaCapo and SPECjvm2008. We also use Renaissance to expose four new compiler optimizations, and we analyze the behavior of several existing ones.},
+	urldate = {2020-03-26},
+	booktitle = {Proceedings of the 40th {ACM} {SIGPLAN} {Conference} on {Programming} {Language} {Design} and {Implementation}},
+	publisher = {Association for Computing Machinery},
+	author = {Prokopec, Aleksandar and Rosa, Andrea and Leopoldseder, David and Duboscq, Gilles and Tuma, Petr and Studener, Martin and Bulej, Lubomir and Zheng, Yudi and Villazon, Alex and Simon, Doug and Wurthinger, Thomas and Binder, Walter},
+	month = jun,
+	year = {2019},
+	keywords = {benchmarks, Big Data benchmarks, concurrency, functional programming benchmarks, JIT compilation, JVM, object-oriented programming benchmarks, parallelism},
+	pages = {31--47}
+}
+
+@inproceedings{pie-performance_2012,
+	title = {Too much {PIE} is bad for performance},
+	doi = {10.3929/ethz-a-007316742},
+	abstract = {Compiling an application as a Position Independent Executable (PIE) enables Address Space Layout Randomization to protect the application from security attacks by mapping the executable at a random memory location. Nevertheless most applications on current x86 Linux distributions are mapped to a static address for performance reasons. This paper evaluates the overhead and side-effects of PIE using the SPEC CPU2006 benchmarks on an Intel Core i7 CPU with a recent Ubuntu distribution. Our analysis shows that the overhead for PIE on 32bit x86 is up to 26\% for some benchmarks with an (arithmetic) average of 10\% and a geometric mean of 9.4\%. We identify the increased register pressure as the source for most of the overhead on x86.},
+	author = {Payer, Mathias},
+	year = {2012}
+}
+
+@article{andrae_global_2015,
+	title = {On {Global} {Electricity} {Usage} of {Communication} {Technology}: {Trends} to 2030},
+	volume = {6},
+	copyright = {http://creativecommons.org/licenses/by/3.0/},
+	shorttitle = {On {Global} {Electricity} {Usage} of {Communication} {Technology}},
+	url = {https://www.mdpi.com/2078-1547/6/1/117},
+	doi = {10.3390/challe6010117},
+	language = {en},
+	number = {1},
+	urldate = {2020-04-15},
+	journal = {Challenges},
+	author = {Andrae, Anders S. G. and Edler, Tomas},
+	month = jun,
+	year = {2015},
+	keywords = {communication networks, consumer devices, data centers, data traffic, electricity efficiency, electricity intensity, electricity usage, greenhouse gases, voice traffic},
+	pages = {117--157}
+}
+
+@inproceedings{chowdhury_greenbundle_2019,
+	title = {{GreenBundle}: {An} {Empirical} {Study} on the {Energy} {Impact} of {Bundled} {Processing}},
+	shorttitle = {{GreenBundle}},
+	doi = {10.1109/ICSE.2019.00114},
+	abstract = {Energy consumption is a concern in the data-center and at the edge, on mobile devices such as smartphones. Software that consumes too much energy threatens the utility of the end-user's mobile device. Energy consumption is fundamentally a systemic kind of performance and hence it should be addressed at design time via a software architecture that supports it, rather than after release, via some form of refactoring. Unfortunately developers often lack knowledge of what kinds of designs and architectures can help address software energy consumption. In this paper we show that some simple design choices can have significant effects on energy consumption. In particular we examine the Model-View-Controller architectural pattern and demonstrate how converting to Model-View-Presenter with bundling can improve the energy performance of both benchmark systems and real world applications. We show the relationship between energy consumption and bundled and delayed view updates: bundling events in the presenter can often reduce energy consumption by 30\%.},
+	booktitle = {2019 {IEEE}/{ACM} 41st {International} {Conference} on {Software} {Engineering} ({ICSE})},
+	author = {Chowdhury, Shaiful Alam and Hindle, Abram and Kazman, Rick and Shuto, Takumi and Matsui, Ken and Kamei, Yasutaka},
+	month = may,
+	year = {2019},
+	note = {ISSN: 1558-1225},
+	keywords = {Benchmark testing, Computer architecture, energy consumption, Energy consumption, energy impact, energy performance, mobile computing, Mobile handsets, model-view-controller architectural pattern, model-view-presenter, Observers, power aware computing, Software, software architecture, software energy consumption, software energy consumption, MVP, MVC, software architecture, software maintenance, Unified modeling language},
+	pages = {1107--1118},
+	file = {IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/PBCCDXNP/8811956.html:text/html}
+}
+
+@inproceedings{manotas_empirical_2016,
+	address = {New York, NY, USA},
+	series = {{ICSE} '16},
+	title = {An {Empirical} {Study} of {Practitioners}' {Perspectives} on {Green} {Software} {Engineering}},
+	isbn = {978-1-4503-3900-1},
+	url = {http://doi.acm.org/10.1145/2884781.2884810},
+	doi = {10.1145/2884781.2884810},
+	abstract = {The energy consumption of software is an increasing concern as the use of mobile applications, embedded systems, and data center-based services expands. While research in green software engineering is correspondingly increasing, little is known about the current practices and perspectives of software engineers in the field. This paper describes the first empirical study of how practitioners think about energy when they write requirements, design, construct, test, and maintain their software. We report findings from a quantitative, targeted survey of 464 practitioners from ABB, Google, IBM, and Microsoft, which was motivated by and supported with qualitative data from 18 in-depth interviews with Microsoft employees. The major findings and implications from the collected data contextualize existing green software engineering research and suggest directions for researchers aiming to develop strategies and tools to help practitioners improve the energy usage of their applications.},
+	urldate = {2016-05-19},
+	booktitle = {Proceedings of the 38th {International} {Conference} on {Software} {Engineering}},
+	publisher = {ACM},
+	author = {Manotas, Irene and Bird, Christian and Zhang, Rui and Shepherd, David and Jaspan, Ciera and Sadowski, Caitlin and Pollock, Lori and Clause, James},
+	year = {2016},
+	keywords = {Empirical study, green software engineering, survey},
+	pages = {237--248},
+	file = {ACM Full Text PDF:/home/sgeorgiou/Zotero/storage/C2DTFGWX/Manotas et al. - 2016 - An Empirical Study of Practitioners' Perspectives .pdf:application/pdf;Manotas et al. - 2016 - An Empirical Study of Practitioners' Perspectives .pdf:/home/sgeorgiou/Dropbox/PhD - Energy Efficiecny in Cloud Computing Systems/Zotero Bib/Software Engineering/Manotas et al. - 2016 - An Empirical Study of Practitioners' Perspectives .pdf:application/pdf}
+}
+
+@article{pang_what_2016,
+	title = {What {Do} {Programmers} {Know} about {Software} {Energy} {Consumption}?},
+	volume = {33},
+	issn = {0740-7459},
+	doi = {10.1109/MS.2015.83},
+	number = {3},
+	journal = {IEEE Software},
+	author = {Pang, C. and Hindle, A. and Adams, B. and Hassan, A. E.},
+	month = may,
+	year = {2016},
+	keywords = {energy consumption, Energy consumption, Energy measurement, Power demand, software engineering, energy efficiency, programming languages, Battery charge measurement, Mobile handsets, mobile devices, green computing, software energy consumption, Software engineering, power usage, Software measurement, virtualization, best practices, cloud computing, data center-infrastructure-management systems, programmers, programming methodologies, software power consumption},
+	pages = {83--89},
+	file = {IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/4U79SGZC/Pang et al. - 2016 - What Do Programmers Know about Software Energy Con.html:text/html}
+}
+
+@article{kc_e-nexsh_2005,
+	title = {e-{NeXSh}: achieving an effectively non-executable stack and heap via system-call policing},
+	shorttitle = {e-{NeXSh}},
+	doi = {10.1109/CSAC.2005.22},
+	journal = {21st Annual Computer Security Applications Conference (ACSAC'05)},
+	author = {Kc, Gaurav S. and Keromytis, Angelos D.},
+	year = {2005}
+}
+
+@article{phoronix_study_1,
+	author = {Sharath S and Anirban Basu},
+	title = {Article: Performance of Eucalyptus and OpenStack Clouds on FutureGrid},
+	journal = {International Journal of Computer Applications},
+	year = {2013},
+	volume = {80},
+	number = {13},
+	pages = {31-37},
+	month = {October},
+	note = {Full text available}
+}
+
+@article{phoronix_study_2,
+	doi = {10.1088/1742-6596/219/4/042005},
+	url = {https://doi.org/10.1088/1742-6596/219/4/042005},
+	year = 2010,
+	month = {apr},
+	publisher = {{IOP} Publishing},
+	volume = {219},
+	number = {4},
+	pages = {042005},
+	author = {Andrea Chierici and Riccardo Veraldi},
+	title = {A quantitative comparison between xen and kvm},
+	journal = {Journal of Physics: Conference Series},
+}
+
+@inproceedings{phoronix_study_3,
+	author = {Loukeris, Michail},
+	title = {Efficient Computing in a Safe Environment},
+	year = {2019},
+	isbn = {9781450355728},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3338906.3342491},
+	doi = {10.1145/3338906.3342491},
+	abstract = {Modern computer systems are facing security challenges and thus are forced to employ
+	various encryption, mitigation mechanisms, and other measures that affect significantly
+	their performance. In this study, we aim to identify the energy and run-time performance
+	implications of Meltdown and Spectre mitigation mechanisms. To achieve our goal, we
+	experiment on server platform using different test cases. Our results highlight that
+	request handling and memory operations are noticeably affected from mitigation mechanisms,
+	both in terms of energy and run-time performance.},
+	booktitle = {Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+	pages = {1208–1210},
+	numpages = {3},
+	keywords = {security measures, safe environment, energy consumption},
+	location = {Tallinn, Estonia},
+	series = {ESEC/FSE 2019}
+}
+
+@INPROCEEDINGS{phoronix_study_4,
+	author={Dordevic, Borislav S. and Jovanovic, Slobodan P. and Timcenko, Valentina V.},
+	booktitle={2014 22nd Telecommunications Forum Telfor (TELFOR)},
+	title={Cloud Computing in Amazon and Microsoft Azure platforms: Performance and service comparison},
+	year={2014},
+	volume={},
+	number={},
+	pages={931-934}, 
+	doi={10.1109/TELFOR.2014.7034558}
+}
+
+@ARTICLE{phoronix_study_5,
+	author={Zhang, Zhiming and Chang, J. Morris},
+	journal={IEEE Transactions on Computers},
+	title={A Cool Scheduler for Multi-Core Systems Exploiting Program Phases},
+	year={2014},  volume={63},  number={5},  pages={1061-1073},
+	doi={10.1109/TC.2012.283}
+}
+
+@INPROCEEDINGS{phoronix_study_6,
+	author={Kaur, Avneet and Raj, Gaurav and Yadav, Sachin and Choudhury, Tanupriya},
+	booktitle={2018 International Conference on Computational Techniques, Electronics and Mechanical Systems (CTEMS)},   title={Performance Evaluation of AWS and IBM Cloud Platforms for Security Mechanism},
+	year={2018},
+	volume={},
+	number={},
+	pages={516-520},
+	doi={10.1109/CTEMS.2018.8769215}
+}
+
+@INPROCEEDINGS{phoronix_study_7,
+	author={Wang, Shen and Chen, Yu and Jiang, Wei and Li, Peng and Dai, Ting and Cui, Yan},
+	booktitle={2009 15th IEEE International Conference on Embedded and Real-Time Computing Systems and Applications},   title={Fairness and Interactivity of Three CPU Schedulers in Linux},
+	year={2009},
+	volume={},
+	number={},
+	pages={172-177},
+	doi={10.1109/RTCSA.2009.26}
+}
+
+@INPROCEEDINGS{phoronix_study_8,
+	author={ur Rahman, Hafiz and Wang, Guojun and Chen, Jianer and Jiang, Hai},
+	booktitle={2018 IEEE SmartWorld, Ubiquitous Intelligence   Computing, Advanced   Trusted Computing, Scalable Computing   Communications, Cloud   Big Data Computing, Internet of People and Smart City Innovation (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)},
+	title={Performance Evaluation of Hypervisors and the Effect of Virtual CPU on Performance},
+	year={2018},
+	volume={},
+	number={},
+	pages={772-779},
+	doi={10.1109/SmartWorld.2018.00146}
+}
+
+@inproceedings{tlb_shootdowns_2020,
+	address = {New York, NY, USA},
+	series = {{EuroSys} '20},
+	title = {Don't shoot down {TLB} shootdowns!},
+	isbn = {978-1-4503-6882-7},
+	url = {https://doi.org/10.1145/3342195.3387518},
+	doi = {10.1145/3342195.3387518},
+	urldate = {2021-09-16},
+	booktitle = {Proceedings of the {Fifteenth} {European} {Conference} on {Computer} {Systems}},
+	publisher = {Association for Computing Machinery},
+	author = {Amit, Nadav and Tai, Amy and Wei, Michael},
+	month = apr,
+	year = {2020},
+	pages = {1--14},
+	file = {Full Text PDF:/home/sgeorgiou/Zotero/storage/HYYSLX7Q/Amit et al. - 2020 - Don't shoot down TLB shootdowns!.pdf:application/pdf},
+}
+
+@online{Linux_kernel_notes_4_14,
+	title = {Linux 4.14 release notes},
+	url = {https://kernelnewbies.org/Linux_4.14},
+	%language = {en},
+	%lastaccessed = {2021-09-01},
+	%journal = {GitHub},
+	year = {2017},
+	%month = {Aug}
+}
+
+@online{Linux_kernel_notes_4_14,
+	title = {Linux 4.14 release notes},
+	url = {https://kernelnewbies.org/Linux_4.14},
+	%language = {en},
+	%lastaccessed = {2021-09-01},
+	%journal = {GitHub},
+	year = {2017},
+	%month = {Aug}
+}
+
+@book{cohen_statistical_1988,
+	address = {New York},
+	edition = {2},
+	title = {Statistical {Power} {Analysis} for the {Behavioral} {Sciences}},
+	isbn = {978-0-203-77158-7},
+	abstract = {Statistical Power Analysis is a nontechnical guide to power analysis in research planning that provides users of applied statistics with the tools they need for more effective analysis. The Second Edition includes:  * a chapter covering power analysis in set correlation and multivariate methods; * a chapter considering effect size, psychometric reliability, and the efficacy of "qualifying" dependent variables and; * expanded power and sample size tables for multiple regression/correlation.},
+	publisher = {Routledge},
+	author = {Cohen, Jacob},
+	month = jul,
+	year = {1988},
+	doi = {10.4324/9780203771587},
+}
+
+@article{vargha_critique_2000,
+	title = {A {Critique} and {Improvement} of the {CL} {Common} {Language} {Effect} {Size} {Statistics} of {McGraw} and {Wong}},
+	volume = {25},
+	url = {https://doi.org/10.3102/10769986025002101},
+	doi = {10.3102/10769986025002101},
+	number = {2},
+	journal = {Journal of Educational and Behavioral Statistics},
+	author = {Vargha, András and Delaney, Harold D.},
+	year = {2000},
+	note = {\_eprint: https://doi.org/10.3102/10769986025002101},
+	pages = {101--132},
+}
+
+@inproceedings{van_schaik_cacheout_2021,
+	title = {{CacheOut}: {Leaking} {Data} on {Intel} {CPUs} via {Cache} {Evictions}},
+	shorttitle = {{CacheOut}},
+	doi = {10.1109/SP40001.2021.00064},
+	abstract = {Recent transient-execution attacks, such as RIDL, Fallout, and ZombieLoad, demonstrated that attackers can leak information while it transits through microarchitectural buffers. Named Microarchitectural Data Sampling (MDS) by Intel, these attacks are likened to "drinking from the firehose", as the attacker has little control over what data is observed and from what origin. Unable to prevent the buffers from leaking, Intel issued countermeasures via microcode updates that overwrite the buffers when the CPU changes security domains.In this work we present CacheOut, a new microarchitectural attack that is capable of bypassing Intel’s buffer overwrite countermeasures. We observe that as data is being evicted from the CPU’s L1 cache, it is often transferred back to the leaky CPU buffers where it can be recovered by the attacker. CacheOut improves over previous MDS attacks by allowing the attacker to choose which data to leak from the CPU’s L1 cache, as well as which part of a cache line to leak. We demonstrate that CacheOut can leak information across multiple security boundaries, including those between processes, virtual machines, user and kernel space, and from SGX enclaves.},
+	booktitle = {2021 {IEEE} {Symposium} on {Security} and {Privacy} ({SP})},
+	author = {van Schaik, Stephan and Minkin, Marina and Kwong, Andrew and Genkin, Daniel and Yarom, Yuval},
+	month = may,
+	year = {2021},
+	note = {ISSN: 2375-1207},
+	keywords = {Data privacy, Kernel, Microarchitecture, Security, Virtual machining},
+	pages = {339--354},
+	file = {Submitted Version:/home/sgeorgiou/Zotero/storage/RSUPA538/van Schaik et al. - 2021 - CacheOut Leaking Data on Intel CPUs via Cache Evi.pdf:application/pdf;IEEE Xplore Abstract Record:/home/sgeorgiou/Zotero/storage/BE675GVU/9519461.html:text/html},
+}

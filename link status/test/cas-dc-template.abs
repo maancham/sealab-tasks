@@ -1,0 +1,16 @@
+Most modern information technology devices use
+the Internet for creating, reading, updating, and deleting
+shared data through remote inter-process communication ({\sc ipc}).
+To evaluate the energy consumption of {\sc ipc} technologies
+and the corresponding run-time performance implications,
+we performed an empirical study on popular {\sc ipc} systems
+implemented in Go, Java, JavaScript, Python, {\sc php}, Ruby,
+and C\#.
+We performed our experiments on computer platforms equipped with
+Intel and {\sc arm} processors.
+We observed that JavaScript and Go implementations of g{\sc rpc}
+offer the lowest energy consumption and execution time.
+Furthermore, by analysing their system call traces,
+we found that inefficient use of system calls
+can contribute to increased energy consumption
+and poor execution time.
